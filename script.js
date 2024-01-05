@@ -1,17 +1,21 @@
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
-import pic from "./pic.png";
+let pic = new Image()
+let ske = new Image()
+let girl = new Image()
+pic.src = "pic.png";
+ske.src = "sky.jpeg"
+girl.src = "hand.png"
 canvas.width = innerWidth;
 canvas.height = innerHeight;
-import ske from "./sky.jpeg"
-import girl from "./hand.png"
+
 
 function rand(x,y) {
 	return 	Math.floor(Math.random() * y) + x;
 
 }
 const Img= new Image()
-Img.src= girl
+Img.src= girl.src
 class woman {
   constructor(Img) {
     this.position = {
@@ -114,10 +118,10 @@ class sky{
 
 
 const image = new Image();
-image.src = pic;
+image.src = pic.src;
 
 const skyimage = new Image();
-skyimage.src = ske;
+skyimage.src = ske.src;
 const woman1 = new woman(Img);
 
 
