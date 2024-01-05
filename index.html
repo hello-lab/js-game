@@ -1,0 +1,55 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	*{
+		overflow: hidden;
+	}
+	body{
+		
+		margin:0;
+		background-color:black;
+		display: flex;
+		align-items: center;
+		height: 100vh;
+		justify-content:center;
+	}
+    #ovr ,#Instruction{
+        display: none;
+       position: absolute;
+        font-size: xxx-large;
+        background: red;
+        width: 100%;
+       
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        opacity: 0.7;
+    }
+    #score{
+        position:absolute;
+        top:0;
+        right:0;
+        color:white;
+    }
+    #Instruction {
+        display: flex;
+        font-size: larger;
+        justify-content: center;
+        background-color: yellowgreen;
+    }
+</style>
+
+<body><canvas></canvas><span id="score"></span><span id="Instruction">It appears that your obsession to click no brought you to the mythical "BLACK-NET" navigate through this death trap and you may reach your precious no button also WAS IT WORTH IT?
+    <br >
+    Controls:WASD<br />
+    Going near green broken matrixes will make your player glitch<br />
+    Spacebar to start
+    </span>
+    <span id="ovr">game over</span></body>
+<script type = "module" src=script.js></script>
